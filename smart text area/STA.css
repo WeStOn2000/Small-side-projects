@@ -1,0 +1,18 @@
+body{
+    background-color: khaki;
+}
+#textarea {
+ 
+ width: 500px;
+ height: 200px;
+ 
+}
+#submit-btn {
+    background-color: rgba(0, 0, 255, 0.103);
+    border-color: black;
+   width: 100px;
+   height: 50px;
+}
+#container {
+    text-align: center;
+}
