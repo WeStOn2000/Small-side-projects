@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    
+  
+    background-color: rgb(5, 68, 139);
+    
+}
+.savage{
+    margin: 100px auto 0;
+    width: 370px;
+    
+}
+.select-btns, .options li{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.select-btns{
+    height: 65px;
+    font-size: 22px;
+  
+    justify-content: space-between;
+    padding: 0 20px;
+    border-radius: 7px;
+    background-color: antiquewhite;
+  
+
+}
+
+.select-btns i{
+    font-size: 31px;
+    transition: transform 0.3s linear;
+}
+.savage.active .select-btns i{
+    transform: rotate(-180deg);
+}
+.content{
+    display: none;
+    margin-top: 15px;
+    padding: 21px;
+    border-radius: 7px;
+    background: #fff;   
+}
+.savage.active .content{
+    display: block;
+} 
+
+.content .search{
+    position: relative;
+}
+.search i{
+    left: 15px;
+    font-size: x-large;
+    color: rgb(29, 1, 29);
+    line-height: 53px;
+    position: absolute;
+}
+.search input{
+    height: 53px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 0 15px 0 43px;
+    border: 1px solid #b3b3b3;
+}
+.content .options{
+    margin-top: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+.options::-webkit-scrollbar{
+    width: 7px;
+}
+.options::-webkit-scrollbar-track{
+    background-color: #b3b3b3;
+    border-radius: 25px;
+}
+.options::-webkit-scrollbar-thumb{
+background-color: #5a5454;
+border-radius: 25px;
+}
+.options li{
+    height: 50px;
+   padding:  0 13px;
+   font-size: 21px;
+    color: rgb(19, 17, 17);
+}
+.options li:hover{
+    background-color: rgb(209, 209, 198);
+}
