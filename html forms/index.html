@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <title>FORMS</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+<form action="index.html" method="post">
+<h1>SIGN UP</h1>
+<fieldset>
+    <legend><span class="number">1</span> YOUR BASIC INFO</legend>
+<label for="name">Name:</label>
+<input type="text" id="name" name="user_name">
+
+<label for="mail">Email:</label>
+<input type="email" id="mail" name="user_email">
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="user_password">
+
+<label>AGE:</label>
+<input type="radio" id="under 14" value="under 14" name="user_age">
+<label for="under 14" class="light">under 14</label>
+<br>
+<input type="radio" id="above 14" value="above 14" name="user_age"><label for="above 14" class="light">above 14</label>
+</fieldset>
+
+<fieldset>
+    <legend><span class="number">2</span> YOUR PROFILE</legend>  
+<label for="bio">BIO:</label>
+<textarea id="bio" name="user_bio"></textarea>
+</fieldset>
+<label for="job">Job role:</label>
+<select id="job" name="user_job">
+    <optgroup label="Web">
+    <option value="python developer">python developer</option>
+    <option value="react developer ">react developer</option>
+    <option value="html and css developer">html and css developer</option>
+    <option value="backend javascript developer">Backend Javascript developer</option>
+    <option value="frontend Javascript developer">frontend Javascript developer</option>
+    <option value="java developer">java developer</option>
+    </optgroup>
+</select>
+<label>interest:</label>
+<input type="checkbox" id="developer" value="development" name="user_interest">
+<label for="developer" class="light">javascript</label>
+<br>
+<input type="checkbox" id="developer" value="development" name="user_interest"><label for="developer" class="light">Python</label>
+<button type="submit">Sign up</button>
+</form>
+      
+      
+    </body>
+</html>
